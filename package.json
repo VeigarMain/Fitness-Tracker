@@ -1,5 +1,5 @@
 {
-  "name": "models",
+  "name": "mongoose_skeleton",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seeds.js"
+    "seed": "node seeders/seed.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +19,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url":
-  }
+    "url": " https://veigarmain.github.io/Fitness-Tracker.git"
+  },
+  "bugs": {
+    "url": "git+ https://veigarmain.github.io/Fitness-Tracker/issues"
+  },
+  "homepage": " https://veigarmain.github.io/Fitness-Tracker#readme"
 }

@@ -11,7 +11,7 @@ const WorkoutSchema = new Schema({
     exercises: [{
         type: {
             type: String,
-            enum: ['resistance', 'cardio'],
+            enum: ['Weight Lifting', 'Cardio'],
             required: true
         },
         name: {
@@ -21,19 +21,19 @@ const WorkoutSchema = new Schema({
         weight: {
             type: Number,
             required: function () {
-                return this.type === "resistance"
+                return this.type === "Weight Lifting"
             }
         },
         sets: {
             type: Number,
             required: function () {
-                return this.type === "resistance"
+                return this.type === "Weight Lifting"
             }
         },
         reps: {
             type: Number,
             required: function () {
-                return this.type === "resistance"
+                return this.type === "Weight Lifting"
             }
         },
         duration: {
@@ -43,7 +43,7 @@ const WorkoutSchema = new Schema({
         distance: {
             type: Number,
             required: function () {
-                return this.type === "cardio"
+                return this.type === "Cardio"
             }
         }
     }
